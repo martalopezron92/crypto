@@ -137,7 +137,7 @@ def ejecuta():
 
     # Paso 3: Escribir el contenido en un archivo nuevo
     try:
-        with open(ruta + "//outputs//archivo_salida_mod.txt", "w") as archivo_escritura:
+        with open(ruta + "//inputs//mensaje_cifrado_mod.txt", "w") as archivo_escritura:
             elementos = ["Caracter + frecuente", "Caracter + probable", "Clave", "Cadena descifrada"]
             for i in range(len(cad_des_opc)):
                 for j in range(len(elementos)):

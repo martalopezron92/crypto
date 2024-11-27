@@ -1,7 +1,7 @@
 # ---------------------------- Análisis de frecuencias (Cifrado Cesar) ----------------------
 
 # FUNCIONES AUXILIARES
-def cal_max(lis_des): 
+def cal_max(lis_des):
     # Entrada: lista de dos dimensiones del tipo: [["a",14],["b",1],["c",45],....]
     # Salida: Lista con el valor máximo colocado en la primera posición: [["c", 45], ["b",1],["a",14],...]
 
@@ -63,7 +63,7 @@ def cal_frq_let(cadena):
     # Ordenamos la lista de elementos de mayor a menor segun su frecuencia
     var_rep_ord = ord_lis(var_rep)
 
-    return var_rep_ord # Devolvemos la lista con la frecuencia de cada caracter 
+    return var_rep_ord # Devolvemos la lista con la frecuencia de cada caracter
 
 def cal_clv_pro(ele_cad, ele_pro):
     # Entrada: dos caracteres, uno de los seleccionados entre los mas frecuentes y otro seleccionado
@@ -78,7 +78,7 @@ def cal_clv_pro(ele_cad, ele_pro):
         clv = len(abc) - pos_ele_cad + pos_ele_pro
     else:
         clv = pos_ele_pro - pos_ele_cad
-    
+
     return clv
 
 def descifrado_cesar(cad_cif, clv):
@@ -102,7 +102,7 @@ def descifrado_cesar(cad_cif, clv):
 
 def ana_frq(cadena, num_let_cad):
     # Entrada: cadena cifrada (criptograma) y parametro numerico que indicará el número
-    # de elementos mas frecuentes con los que trabajaremos. 
+    # de elementos mas frecuentes con los que trabajaremos.
     # Salida: Lista que devuelve el caracter mas frecuente seleccionado, el caracter más probable
     # la clave, y la cadena descifrada utilizando esa clave.
 
@@ -119,11 +119,14 @@ def ana_frq(cadena, num_let_cad):
             clv = cal_clv_pro(ele_cad, ele_pro)
             cad_des = descifrado_cesar(cadena, clv)
             lis_clv.append([ele_cad, ele_pro, clv ,cad_des])
-    
+
+    # print(lis_clv)
+
     return lis_clv # Lista de listas
 
+# FUNCION PRINCIPAL
 def ejecuta():
-    
+
     # Paso 1: Leer el contenido del archivo original
     ruta = ".//5_criptografia"
     with open(ruta + "//inputs//mensaje_cifrado.txt", "r") as archivo_lectura:
@@ -131,6 +134,7 @@ def ejecuta():
 
     # Paso 2: Llamamos a la función que desencriptará el mensaje
     cad_des_opc = ana_frq(contenido, 5) # El parámetro 5 indica el numero de caracteres más frecuentes
+
 
     # Paso 3: Escribir el contenido en un archivo nuevo
     try:
