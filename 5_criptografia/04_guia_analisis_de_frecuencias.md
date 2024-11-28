@@ -1,5 +1,5 @@
 
-# Guía para el profesorado: Explicación del código de análisis de frecuencias
+# Explicación del código de análisis de frecuencias
 
 El objetivo del código adjunto es descifrar un texto cifrado mediante el cifrado César utilizando **análisis de frecuencias**. Este método explora la distribución de letras en el texto cifrado y compara las frecuencias con las letras más comunes en el idioma (por defecto, el español). A continuación, explicamos paso a paso cada función y su propósito, relacionándolas con conceptos de Python y el tema de fuerza bruta.
 
