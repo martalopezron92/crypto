@@ -86,14 +86,20 @@ def descifrado_cesar(cad_cif, clv):
     # Salida: mensaje descifrado con la clave de entrada
 
     # Variable auxiliar
+    global abc # La declaracion global indica que la variable abc existe fuera de la función
+    abc = list("abcdefghijklmnopqrstuvwxyz") # Lista con los elementos del abecedario
     new_cad = "" # Cadena vacía donde se irá creando la nueva cadena descifrada
 
     if clv >= len(abc):
         clv = clv % len(abc)
 
+    # Desciframos la cadena cambiando las posiciones
     for i in cad_cif:
         if i in abc:
-            pos = max(max(abc.index(i) - clv, 0), (abc.index(i) - clv) % len(abc))
+            if clv > abc.index(i):
+                pos = len(abc) - (clv - abc.index(i))
+            else:
+                pos = abc.index(i) - clv
             new_cad += abc[pos]
         else:
             new_cad += " "
@@ -107,7 +113,7 @@ def ana_frq(cadena, num_let_cad):
     # la clave, y la cadena descifrada utilizando esa clave.
 
     global let_max_frq
-    let_max_frq = ["e", "a", "o", "l", "s", "n", "d"]
+    let_max_frq = ["e", "a", "o", "l", "s", "n", "d"] # Simbolos mas probables en el castellano
     cadena = cadena.lower()
     lis_clv = []
     lis_var_rep = cal_frq_let(cadena)
@@ -134,7 +140,6 @@ def ejecuta():
 
     # Paso 2: Llamamos a la función que desencriptará el mensaje
     cad_des_opc = ana_frq(contenido, 5) # El parámetro 5 indica el numero de caracteres más frecuentes
-
 
     # Paso 3: Escribir el contenido en un archivo nuevo
     try:
