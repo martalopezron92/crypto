@@ -33,7 +33,8 @@ Los más utilizados actualmente son:
 *   Blowfish
 *   IDEA
 
-![Proceso de cifrado simétrico](https://youtu.be/SlSmI18T2Ns) _Proceso de cifrado simétrico_
+
+<iframe width="721" height="315" src="https://www.youtube.com/embed/SlSmI18T2Ns" title="Criptografía SIMÉTRICA: Definición y Características ➤[CIFRADO de Datos] 🔑 Tipos de Criptografía 🔒" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ¿Un ejemplo de cifrado simétrico?
 
