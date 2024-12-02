@@ -114,7 +114,7 @@ def ana_frq(cadena, num_let_cad):
 
     global let_max_frq
     let_max_frq = ["e", "a", "o", "l", "s", "n", "d"] # Simbolos mas probables en el castellano
-    cadena = cadena.lower()
+    cadena = cadena.lower() # Convierte en minuscula todos los caracteres del texto.
     lis_clv = []
     lis_var_rep = cal_frq_let(cadena)
 
