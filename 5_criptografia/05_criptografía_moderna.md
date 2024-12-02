@@ -1,4 +1,4 @@
-# Criptografía moderna | Marcos Ruiz
+# Criptografía moderna
 Introducción
 ------------
 
@@ -33,18 +33,14 @@ Los más utilizados actualmente son:
 *   Blowfish
 *   IDEA
 
+Enlace video de cifrado simétrico: https://www.youtube.com/embed/SlSmI18T2Ns
 
-<iframe width="721" height="315" src="https://www.youtube.com/embed/SlSmI18T2Ns" title="Criptografía SIMÉTRICA: Definición y Características ➤[CIFRADO de Datos] 🔑 Tipos de Criptografía 🔒" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+_¿Un ejemplo de cifrado simétrico?_
 
-¿Un ejemplo de cifrado simétrico?
+_¿Qué ventajas/desventajas tiene el cifrado simétrico?_
 
-¿Qué ventajas/desventajas tiene el cifrado simétrico?
+_¿Podemos usar el mismo canal por el que nos comunicamos para enviar la clave?_
 
-¿Podemos usar el mismo canal por el que nos comunicamos para enviar la clave?
-
-¿Qué es un ataque man in the middle?
-
-¿Por qué existe el cifrado por bloque y cifrado por flujo?
 
 ### Problemas de la criptografía simétrica
 
@@ -146,13 +142,13 @@ Es el receptor el que tiene el par de claves. Elige una de ellas (llamada públi
 
 Lo que se cifra con la clave publica, solo puede descifrarse con la clave privada.
 
-![Proceso de cifrado asimétrico](https://marcosruiz.github.io/assets/img/criptografia-moderna/criptografiaAsimetrica.png) _Proceso de cifrado asimétrico_
+Enlace video de cifrado asimétrico: https://youtu.be/SIIqLgqRMCo
 
-¿Qué desventajas tiene el cifrado asimétrico?
+_¿Qué desventajas tiene el cifrado asimétrico?_
 
-¿Con que firmamos si queremos confidencialidad?
+_¿Con que firmamos si queremos confidencialidad?_
 
-¿Con que firmamos si queremos autenticación?
+_¿Con que firmamos si queremos autenticación?_
 
 ### Ventajas criptografía asimétrica
 
@@ -184,6 +180,8 @@ La criptografía asimétrica vio su nacimiento en 1976, cuando Ralph Merkel, Whi
 
 ![Concepto del intercambio de claves secretas detrás del Diffie–Hellman](https://marcosruiz.github.io/assets/img/criptografia-moderna/intercambioDeSecreto.png) _Concepto del intercambio de claves secretas detrás del Diffie–Hellman_
 
+Enlace video criptografía explicada con colores: https://youtu.be/vZToAM4kwjM
+
 #### RSA
 
 Es un sistema criptográfico de clave pública desarrollado en 1977. Es el primer y más utilizado algoritmo de este tipo y es válido tanto para cifrar como para firmar digitalmente.
@@ -202,6 +200,8 @@ Garantiza no solo la confidencialidad de la comunicación entre dos partes, cifr
 
 También proporciona otros servicios o funciones de seguridad de la información, como son la autenticación de origen , la integridad o el no-repudio (mediante la firma digital).
 
+Enlace a video de RSA: https://youtu.be/Q8K311s7EiM
+
 #### DSA
 
 DSA es un estándar del Gobierno Federal de los Estados Unidos de América o FIPS para firmas digitales.
@@ -209,25 +209,6 @@ DSA es un estándar del Gobierno Federal de los Estados Unidos de América o FIP
 #### ElGamal
 
 El procedimiento de cifrado/descifrado ElGamal se refiere a un esquema de cifrado basado en el problema matemático del logaritmo discreto. Es un algoritmo de criptografía asimétrica basado en la idea de Diffie-Hellman y que funciona de una forma parecida a este algoritmo discreto. El algoritmo de ElGamal puede ser utilizado tanto para generar firmas digitales como para cifrar o descifrar.
-
-Resumen del cifrado simétrico y asimétrico
-------------------------------------------
-
-El vídeo más importante…
-
-¿Qué ventajas tiene el cifrado simétrico?
-
-¿Qué ventajas tiene el cifrado asimétrico?
-
-¿Se puede combinar el cifrado simétrico y asimétrico para obtener lo mejor de los dos mundos?
-
-¿Por qué en el cifrado simétrico hay más llaves que cifrado asimétrico?
-
-Aplicaciones reales…
-
-¿Qué problemas tiene el cifrado simétrico?
-
-Aún más resumido…
 
 Criptografía híbrida
 --------------------
