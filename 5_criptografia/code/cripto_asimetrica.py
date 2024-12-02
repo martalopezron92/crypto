@@ -1,3 +1,5 @@
+# Descargar previamente la libreria : pip install eciespy
+
 from ecies import encrypt, decrypt
 from ecies.utils import generate_eth_key, generate_key
 
